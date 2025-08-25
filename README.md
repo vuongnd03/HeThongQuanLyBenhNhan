@@ -14,15 +14,21 @@ Dịch vụ thông báo – Lắng nghe các sự kiện Kafka và gửi cảnh 
 Kiểm thử tích hợp – Kiểm thử cho các tình huống đầu cuối
 Cơ sở hạ tầng – Thiết lập dựa trên Docker với Kafka, PostgreSQL, v.v.
 Công nghệ Stack
-Java 21
-spring boot
-spring security + JWT
-gRPC – Giao tiếp giữa các dịch vụ
-Kafka – Phát trực tuyến sự kiện
-PostgreSQL – Cơ sở dữ liệu cho từng dịch vụ
-Docker & Docker Compose – Điều phối container
-Protocol Buffers– Dành cho tin nhắn gRPC
-JUnit/Testcontainers – Kiểm thử tích hợp
+ava 21
+
+Spring Boot – Framework chính cho các microservice.
+
+Spring Security + JWT – Xác thực và phân quyền.
+
+gRPC + Protocol Buffers – Giao tiếp hiệu quả giữa các service.
+
+Apache Kafka – Truyền sự kiện theo hướng publish-subscribe.
+
+PostgreSQL – Cơ sở dữ liệu riêng biệt cho từng service.
+
+Docker & Docker Compose – Đóng gói và triển khai hạ tầng.
+
+JUnit + Testcontainers – Kiểm thử tích hợp (tích hợp Kafka, PostgreSQL...).
 🧱 Kiến trúc
                        +------------------------+
                        |     API Gateway        |
