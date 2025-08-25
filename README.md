@@ -6,13 +6,21 @@ Tổng quan
 Dự án dựa trên dịch vụ vi mô này bao gồm:
 
 API Gateway – Điểm vào duy nhất cho tất cả các dịch vụ
+
 Authentication Service – Đăng ký/đăng nhập người dùng bằng mã thông báo JWT
+
 Patient Service – Xử lý hồ sơ bệnh nhân và xuất bản sự kiện
+
 Billing Service – Giao tiếp với dịch vụ bệnh nhân thông qua gRPC
+
 Analytics Service – Sử dụng các sự kiện Kafka để thực hiện phân tích
+
 Dịch vụ thông báo – Lắng nghe các sự kiện Kafka và gửi cảnh báo
+
 Kiểm thử tích hợp – Kiểm thử cho các tình huống đầu cuối
+
 Cơ sở hạ tầng – Thiết lập dựa trên Docker với Kafka, PostgreSQL, v.v.
+
 Công nghệ Stack
 ava 21
 
@@ -30,6 +38,7 @@ Docker & Docker Compose – Đóng gói và triển khai hạ tầng.
 
 JUnit + Testcontainers – Kiểm thử tích hợp (tích hợp Kafka, PostgreSQL...).
 🧱 Kiến trúc
+
                        +------------------------+
                        |     API Gateway        |
                        +-----------+------------+
